@@ -1,46 +1,38 @@
-# Plan de entrenamiento — CodeFest 2026 Junior
+# Plan de entrenamiento — Fase 2: Lógica Dual (C + JavaScript)
 
-## Objetivo
+## 1. Contexto y Nuevos Objetivos
 
-Prepararse para resolver funciones de JavaScript bajo presión, priorizando puntos seguros, exactitud en casos límite y velocidad de depuración.
+- **Hito alcanzado:** 5.° lugar de 34 participantes en el CodeFest 2026 Junior.
+- **Aprendizaje clave:** La manipulación de arreglos, conteos, control de estados con banderas y casos límite son las áreas que marcan la diferencia.
+- **Meta actual:** Desarrollar pensamiento algorítmico y estructurado con un ritmo progresivo, sin prisas.
+  - **C (Universidad):** Construir bases firmes de bajo nivel usando bucles (`for`, `while`), condicionales, arreglos unidimensionales con índices (`arr[i]`), cadenas de caracteres clásicas (`char str[]`), entrada/salida y variables bandera (`int flag`). *(Nada de punteros ni memoria dinámica por ahora; se abordarán solo cuando la lógica de arreglos e índices esté dominada)*.
+  - **JavaScript (Desarrollo Web):** Manipulación limpia de arreglos, creación de arreglos resultado con `.push()`, filtros, transformaciones y funciones con retornos exactos.
 
-## Formato oficial que guía el entrenamiento
+---
 
-- 12 problemas: 5 fáciles, 4 intermedios y 3 difíciles.
-- Duración tentativa: aproximadamente 3 horas.
-- Puntaje: fácil 10, intermedio 20, difícil 30.
-- Dos de los doce problemas son de depuración.
-- Todos se resuelven implementando una función con nombre y parámetros exactos.
-- Navegación libre e intentos ilimitados.
-- En Junior, los bucles, listas y métodos comunes aparecen desde Intermedio.
-- Desempate: menor tiempo total empleado en los problemas resueltos.
+## 2. Metodología de Bloques Mixtos
 
-## Ruta de hoy
+Los bloques seguirán teniendo **5 ejercicios**, combinando ambos lenguajes de forma progresiva:
 
-Se trabajará un solo bloque a la vez. Cada bloque tendrá cinco ejercicios y no se revelará el siguiente hasta cerrar y revisar el actual.
+1. **Ejercicio 1 (C):** Arreglos unidimensionales / cadenas básicas mediante índices y bucles.
+2. **Ejercicio 2 (JavaScript):** Construcción o transformación de arreglos (sin mutar el original).
+3. **Ejercicio 3 (C):** Control de flujo, conteos acumulados y banderas de estado (`flag`).
+4. **Ejercicio 4 (JavaScript):** Reto algorítmico práctico (inspirado en problemas reales de competencia).
+5. **Ejercicio 5 (Debugging - C o JS):** Análisis y corrección de código con errores lógicos o casos borde.
 
-1. Básico–intermedio: condicionales, casos límite, listas y depuración.
-2. Intermedio: recorridos, acumuladores, conteos y transformaciones.
-3. Intermedio–avanzado: combinaciones de reglas y eficiencia.
-4. Avanzado: problemas de mayor razonamiento y depuración engañosa.
-5. Simulacro final: selección estratégica de ejercicios contra reloj.
+---
 
-La cantidad real de bloques se ajustará al rendimiento y al tiempo disponible. La prioridad no es completar muchos, sino corregir patrones de error antes del torneo.
+## 3. Principio de Progresión
 
-## Protocolo de cada bloque
+1. **Sin carreras contra reloj:** El objetivo no es la velocidad, sino entender a fondo el *por qué* de cada línea de código.
+2. **Nivel calibrado:** No se empieza desde cero absoluto ("Hola Mundo"), pero tampoco se salta a temas avanzados. El enfoque está en el punto exacto de fricción: **recorridos, arreglos, índices y estados**.
+3. **Casos límite obligatorios:** En cada ejercicio se prueban casos vacíos, ceros, negativos, duplicados o textos con espacios.
 
-1. Resolver sin buscar soluciones externas.
-2. Probar ejemplos y crear al menos dos casos propios por ejercicio.
-3. Registrar el tiempo aproximado.
-4. Avisar cuando estén listos los cinco ejercicios.
-5. Se revisará corrección, claridad, casos límite y complejidad.
-6. No se borrará ni reemplazará el código original. Si existe una alternativa mejor, se añadirá al final del mismo archivo bajo el título `VERSIÓN ALTERNATIVA`.
+---
 
-## Estrategia para el torneo
+## 4. Protocolo de Trabajo y Regla de Oro
 
-- Primera pasada: leer los 12 enunciados y resolver primero los fáciles más claros.
-- No quedarse atascado: si no hay avance después de 10–15 minutos, cambiar de problema.
-- Antes de ejecutar, comprobar nombre de función, parámetros y tipo de retorno.
-- Probar límites: cero, negativos, listas vacías, un único elemento, empates y valores repetidos.
-- Reservar tiempo al final para releer condiciones exactas y errores de comparación (`<` frente a `<=`).
+1. **Intento individual:** Resolver sin recurrir a IAs generativas directas para afianzar la lógica propia.
+2. **Preservación de código:** Nunca se borra la solución del estudiante. Si existe una alternativa más clara o idiomática, se agrega al final del archivo bajo el encabezado `VERSIÓN ALTERNATIVA`.
+3. **Registro obligatorio en [PROGRESO.md](file:///C:/xampp/htdocs/daily-blocks/PROGRESO.md):** Al finalizar cada sesión se actualiza la bitácora indicando exactamente en qué punto quedamos, qué causó fricción y qué quedó dominado para retomar sin pérdida de contexto en la siguiente sesión.
 

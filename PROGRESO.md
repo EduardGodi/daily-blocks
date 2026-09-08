@@ -1,66 +1,57 @@
-# Bitácora de progreso
+# Bitácora de Progreso y Registro de Sesiones
 
-## Sesión actual — 28 de agosto de 2026
+## Resumen Histórico — Torneo CodeFest 2026 Junior (29 de agosto de 2026)
 
-- Categoría: Junior.
-- Lenguaje: JavaScript.
-- Nivel inicial declarado: básico–intermedio.
-- Estado: Sesión pausada. Bloque 1 cerrado; Bloque 2 en curso desde el ejercicio 2.
-- Competencia: 29 de agosto de 2026.
+- **Resultado oficial:** 5.° lugar de 34 participantes.
+- **Punto de fricción identificado:** Problemas de manipulación de arreglos, manejo de casos límite y acumulación bajo presión.
+- **Material de referencia:** En la carpeta `ref/` se encuentran las capturas de pantalla de los problemas de la competencia (resueltos por el 1.° lugar).
 
-## Resultados por bloque
+---
 
-| Bloque | Nivel | Correctos de forma independiente | Tiempo | Estado |
-|---|---|---:|---:|---|
-| 1 | Básico–intermedio | 1 / 5 | — | Cerrado con revisión guiada. Ejercicio 4 resuelto correctamente; 1, 2, 3 y 5 requirieron correcciones o apoyo. |
-| 2 | Intermedio (arreglos) | 0 / 5 | — | Ejercicio 1 revisado con apoyo; retomar desde el ejercicio 2. |
+## Sesión — 7 de septiembre de 2026 (Cierre de Sesión)
 
-## Aspectos que cuestan
+- **Fase:** Fase 2 — Lógica Dual Progresiva (C para Universidad + JavaScript para Desarrollo Web).
+- **Ritmo:** Progresivo, deliberate practice, sin prisas y sin conceptos avanzados (cero punteros o memoria dinámica por ahora).
+- **Estado de la sesión:** **Cerrada**.
 
-- Diferenciar entre mostrar un valor con `console.log` y devolverlo con `return`.
-- Traducir cada condición del enunciado a una comparación exacta (`< 6`, `>= 8`, `>= 10`).
-- Controlar listas vacías antes de dividir entre su longitud.
-- Usar `null` como marcador cuando aún no existe un valor; no inicializar máximos en 0 si pueden llegar números negativos.
-- Ignorar duplicados del máximo cuando se solicita el segundo valor distinto.
-- Recordar que los métodos distinguen mayúsculas: `forEach`, no `foreach`.
-- Al devolver varias listas, envolverlas en una lista: `[primera, segunda]`; `(primera, segunda)` no equivale a eso.
+### Resumen de la sesión
+1. **Reestructuración de objetivos:** Se documentó el 5.° lugar de 34 en el torneo CodeFest 2026 Junior.
+2. **Definición de reglas automáticas:** Se creó [GEMINI.md](file:///C:/xampp/htdocs/daily-blocks/GEMINI.md) con las directrices del proyecto y el perfil del estudiante para carga automática en cada sesión.
+3. **Actualización del plan:** Se actualizó [PLAN_ENTRENAMIENTO.md](file:///C:/xampp/htdocs/daily-blocks/PLAN_ENTRENAMIENTO.md) con la nueva estructura mixta de 5 ejercicios por bloque (C, JS, C, JS, Debugging).
+4. **Análisis conceptual en C:** Se desglosó la lógica del ejercicio de saltos de línea y mayúsculas mediante el patrón de máquina de estados / banderas (`flags`), dejando claros los conceptos a practicar.
 
-## Fortalezas observadas
+### Dificultades registradas para trabajar en los próximos bloques
 
-- Implementa correctamente recorridos de listas con acumuladores.
-- Identifica y conserva el máximo de una racha consecutiva.
-- Muestra buena disposición para comparar alternativas y aprender métodos de arreglos.
+1. **En C:**
+   - Control de flujo y lectura secuencial de caracteres.
+   - Banderas de estado (`flags`) para aplicar reglas condicionales.
+   - Recorridos de arreglos unidimensionales mediante índices `[i]` y límites de parada.
+2. **En JavaScript:**
+   - Manipulación de arreglos construyendo resultados con `.push()` y `.includes()`.
+   - Asegurar `return` frente a `console.log`.
+   - Control de casos límite (arreglos vacíos `[]`, negativos, duplicados).
 
-## Fortalezas observadas
+### Fortalezas consolidadas
 
-Pendiente de identificar mediante las soluciones del Bloque 1.
+- Recorridos con bucles y acumuladores.
+- Seguimiento y conservación de máximos y rachas.
+- Capacidad de razonamiento competitivo demostrada en el torneo.
 
-## Próximos ajustes y consejos
+---
 
-- En el Bloque 2, priorizar `push`, `includes`, lectura por índice y la creación de un arreglo resultado.
-- Antes de ejecutar: verificar nombre exacto de la función, `return` en todos los caminos y tipo de retorno solicitado.
-- No usar `sort()` para evitar un recorrido si puedes resolverlo en una sola pasada; `sort()` modifica el arreglo original y puede ser una trampa.
+## Estado de Bloques
 
-## Cierre de sesión
+| Bloque | Enfoque | Estado | Detalle |
+|---|---|---|---|
+| **Bloque 1** | Básico–intermedio JS | Completado | Cerrado con revisión guiada. |
+| **Bloque 2** | Intermedio arreglos JS | Integrado | Conceptos de arreglos se integran al nuevo flujo mixto. |
+| **Bloque 3** | Mixto C + JS (Arreglos, Índices y Banderas) | **Pendiente por iniciar** | 5 ejercicios: Ej1 (C), Ej2 (JS), Ej3 (C), Ej4 (JS), Ej5 (Debug). |
 
-- Se completó el primer bloque de cinco ejercicios básico–intermedios.
-- Se inició el segundo bloque, enfocado en manipulación de arreglos.
-- El ejercicio 4 del Bloque 1 fue resuelto de forma independiente y correcta.
-- En los demás ejercicios se practicaron correcciones guiadas y se añadieron versiones alternativas para comparar.
-- El siguiente punto es `bloque-02/ejercicio-02.js`: eliminar repetidos conservando el orden de la primera aparición.
+---
 
-### Repaso breve antes del torneo
+## Punto de Arranque para la Siguiente Sesión
 
-1. Toda función del juez debe terminar devolviendo con `return`; `console.log` no es una respuesta.
-2. Para recorrer una lista, prioriza `for` si quieres máxima claridad; usa `forEach` cuando solo necesites visitar cada elemento.
-3. Inicia los arreglos de resultado vacíos y usa `push`. Si la entrada está vacía, muchas veces el resultado correcto sale naturalmente.
-4. Lee de nuevo los operadores límite: `>=` incluye el valor, `>` no lo incluye.
-5. Para datos que pueden ser negativos, no uses 0 como valor inicial de máximo o mínimo sin pensarlo.
+- **Acción inmediata:** Crear carpeta `bloque-03/` y preparar el **Ejercicio 1 en C**.
+- **Tema del Ejercicio 1 (C):** Arreglos unidimensionales e índices: búsqueda, conteo y límites sin punteros.
 
-### Nivel actual estimado
 
-Entre básico–intermedio e intermedio inicial. Ya tienes una base sólida en recorridos, acumuladores y rachas. La práctica que más retorno dará a continuación es construir arreglos resultado, controlar casos borde y escribir condiciones exactas.
-
-## Resumen del Bloque 1
-
-Se practicaron condicionales, redondeo, validación de texto, recorridos de arreglos, acumuladores, rachas y depuración. El mayor obstáculo fue convertir todos los requisitos del enunciado en condiciones completas y exactas. El siguiente bloque concentra la práctica en construir y transformar arreglos, manteniendo los mismos hábitos de validación.
