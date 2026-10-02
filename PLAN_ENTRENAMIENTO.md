@@ -1,38 +1,42 @@
-# Plan de entrenamiento — Fase 2: Lógica Dual (C + JavaScript)
+# Plan de Entrenamiento — Especialización en C++ y Arquitectura de Software
 
-## 1. Contexto y Nuevos Objetivos
+## 1. Contexto y Visión del Estudiante
 
-- **Hito alcanzado:** 5.° lugar de 34 participantes en el CodeFest 2026 Junior.
-- **Aprendizaje clave:** La manipulación de arreglos, conteos, control de estados con banderas y casos límite son las áreas que marcan la diferencia.
-- **Meta actual:** Desarrollar pensamiento algorítmico y estructurado con un ritmo progresivo, sin prisas.
-  - **C (Universidad):** Construir bases firmes de bajo nivel usando bucles (`for`, `while`), condicionales, arreglos unidimensionales con índices (`arr[i]`), cadenas de caracteres clásicas (`char str[]`), entrada/salida y variables bandera (`int flag`). *(Nada de punteros ni memoria dinámica por ahora; se abordarán solo cuando la lógica de arreglos e índices esté dominada)*.
-  - **JavaScript (Desarrollo Web):** Manipulación limpia de arreglos, creación de arreglos resultado con `.push()`, filtros, transformaciones y funciones con retornos exactos.
-
----
-
-## 2. Metodología de Bloques Mixtos
-
-Los bloques seguirán teniendo **5 ejercicios**, combinando ambos lenguajes de forma progresiva:
-
-1. **Ejercicio 1 (C):** Arreglos unidimensionales / cadenas básicas mediante índices y bucles.
-2. **Ejercicio 2 (JavaScript):** Construcción o transformación de arreglos (sin mutar el original).
-3. **Ejercicio 3 (C):** Control de flujo, conteos acumulados y banderas de estado (`flag`).
-4. **Ejercicio 4 (JavaScript):** Reto algorítmico práctico (inspirado en problemas reales de competencia).
-5. **Ejercicio 5 (Debugging - C o JS):** Análisis y corrección de código con errores lógicos o casos borde.
+- **Perfil:** 32 años. La edad no es una limitación en ingeniería de software; es una ventaja de enfoque, disciplina y claridad de propósito.
+- **Logro de referencia:** 5.° lugar de 34 en el CodeFest 2026 Junior.
+- **Ruta de Carrera:**
+  - **Fase Actual (C++):** Dominio de la lógica algorítmica pura, manejo riguroso de memoria e índices, manipulación de arreglos y cadenas, estructuras de datos y persistencia en disco (**Manejo de archivos**).
+  - **Fase Puente (Python):** Automatizaciones de sistemas, sockets/servidores, scripting para ciberseguridad y herramientas de interfaz de texto en terminal (**TUI**).
+  - **Fase Avanzada (IA y Redes Neuronales):** Las redes neuronales en su núcleo son álgebra lineal (matrices y vectores) y cálculo numérico; aprender cómo los arreglos y la memoria funcionan en C++ es exactamente lo que permite construir o entender motores de Deep Learning como PyTorch o llama.cpp.
 
 ---
 
-## 3. Principio de Progresión
+## 2. Estructura de Cada Bloque
 
-1. **Sin carreras contra reloj:** El objetivo no es la velocidad, sino entender a fondo el *por qué* de cada línea de código.
-2. **Nivel calibrado:** No se empieza desde cero absoluto ("Hola Mundo"), pero tampoco se salta a temas avanzados. El enfoque está en el punto exacto de fricción: **recorridos, arreglos, índices y estados**.
-3. **Casos límite obligatorios:** En cada ejercicio se prueban casos vacíos, ceros, negativos, duplicados o textos con espacios.
+Cada bloque se compone de:
+
+1. **5 Ejercicios de Programación en C++:**
+   - Retos directos con lógica aplicada a arreglos, índices, acumuladores y banderas.
+   - Nada de "sumar dos números": problemas estructurados con casos de prueba y condiciones de parada.
+2. **Ficha de Estudio para Obsidian (`TEORIA_Y_HERRAMIENTAS.md`):**
+   - Una guía técnica por bloque explicando utilidades estándar (como `<iomanip>` con `setw`, tipos de datos, pasaje por valor/referencia, buffers de E/S).
+   - Formato listo para copiar y pegar en tu bóveda de Obsidian con explicaciones claras, trucos del lenguaje y fragmentos de código comentados.
 
 ---
 
-## 4. Protocolo de Trabajo y Regla de Oro
+## 3. Hoja de Ruta Progresiva
 
-1. **Intento individual:** Resolver sin recurrir a IAs generativas directas para afianzar la lógica propia.
-2. **Preservación de código:** Nunca se borra la solución del estudiante. Si existe una alternativa más clara o idiomática, se agrega al final del archivo bajo el encabezado `VERSIÓN ALTERNATIVA`.
-3. **Registro obligatorio en [PROGRESO.md](file:///C:/xampp/htdocs/daily-blocks/PROGRESO.md):** Al finalizar cada sesión se actualiza la bitácora indicando exactamente en qué punto quedamos, qué causó fricción y qué quedó dominado para retomar sin pérdida de contexto en la siguiente sesión.
+- **Nivel 1 (Actual):** Arreglos unidimensionales (1D), conteos condicionales, mínimos/máximos con índices, particiones, banderas de estado y formateo con `<iomanip>`.
+- **Nivel 2:** Arreglos multidimensionales (Matrices 2D), recorridos por filas y columnas, transformaciones básicas.
+- **Nivel 3:** Cadenas de caracteres (`std::string` y arreglos `char[]`), parsing de datos y validaciones.
+- **Nivel 4:** Modularización con funciones, paso por referencia (`&`), estructuras (`struct`) y modelado de datos.
+- **Nivel 5:** **Manejo de archivos (`fstream`):** Lectura, escritura, parseo de configuraciones y logs (base directa para ciberseguridad y servidores).
+- **Nivel 6:** Transición a Python & Redes Neuronales (Perceptrón simple implementado desde cero entendiendo las matrices que ya dominas).
 
+---
+
+## 4. Reglas de Oro
+
+1. **Comprensión profunda:** Entender cada índice `i`, cada condición `arr[i]` y el porqué de la memoria.
+2. **Preservación:** Las soluciones del estudiante nunca se eliminan; las mejoras o alternativas van bajo `VERSIÓN ALTERNATIVA`.
+3. **Registro continuo en [PROGRESO.md](file:///C:/xampp/htdocs/daily-blocks/PROGRESO.md):** Para retomar cada sesión con contexto intacto.

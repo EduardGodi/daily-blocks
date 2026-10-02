@@ -1,57 +1,41 @@
 # Bitácora de Progreso y Registro de Sesiones
 
-## Resumen Histórico — Torneo CodeFest 2026 Junior (29 de agosto de 2026)
+## 1. Perfil y Visión General
 
-- **Resultado oficial:** 5.° lugar de 34 participantes.
-- **Punto de fricción identificado:** Problemas de manipulación de arreglos, manejo de casos límite y acumulación bajo presión.
-- **Material de referencia:** En la carpeta `ref/` se encuentran las capturas de pantalla de los problemas de la competencia (resueltos por el 1.° lugar).
+- **Estudiante:** Formación en ingeniería de software (32 años). Enfoque con disciplina, madurez y práctica deliberada.
+- **Enfoque Actual:** **C++ Puro** (Bases sólidas de lógica, manipulación de arreglos en memoria, índices, algoritmos, y posterior paso a manejo de archivos con `fstream`).
+- **Proyección:** Transición a Python (Ciberseguridad, automatizaciones, servidores, herramientas TUI) y Redes Neuronales / Machine Learning desde los fundamentos matemáticos de bajo nivel.
+- **Hito histórico:** 5.° lugar de 34 en el torneo CodeFest 2026 Junior.
 
 ---
 
-## Sesión — 7 de septiembre de 2026 (Cierre de Sesión)
+## 2. Estado de Bloques
 
-- **Fase:** Fase 2 — Lógica Dual Progresiva (C para Universidad + JavaScript para Desarrollo Web).
-- **Ritmo:** Progresivo, deliberate practice, sin prisas y sin conceptos avanzados (cero punteros o memoria dinámica por ahora).
+| Bloque | Enfoque Principal | Herramienta Extra (Obsidian) | Estado | Detalle |
+|---|---|---|---|---|
+| **Bloque 1** | Arreglos 1D: Búsqueda, conteo, rotación in-place, rachas y extremos | Librería `<iomanip>` (`std::setw`, alineación de columnas y tablas en terminal) | **Listo para iniciar** | 5 ejercicios en C++ creados y calibrados. Ficha teórica generada. |
+
+---
+
+## 3. Sesión — 1 de octubre de 2026 (Cierre de Sesión)
+
 - **Estado de la sesión:** **Cerrada**.
-
-### Resumen de la sesión
-1. **Reestructuración de objetivos:** Se documentó el 5.° lugar de 34 en el torneo CodeFest 2026 Junior.
-2. **Definición de reglas automáticas:** Se creó [GEMINI.md](file:///C:/xampp/htdocs/daily-blocks/GEMINI.md) con las directrices del proyecto y el perfil del estudiante para carga automática en cada sesión.
-3. **Actualización del plan:** Se actualizó [PLAN_ENTRENAMIENTO.md](file:///C:/xampp/htdocs/daily-blocks/PLAN_ENTRENAMIENTO.md) con la nueva estructura mixta de 5 ejercicios por bloque (C, JS, C, JS, Debugging).
-4. **Análisis conceptual en C:** Se desglosó la lógica del ejercicio de saltos de línea y mayúsculas mediante el patrón de máquina de estados / banderas (`flags`), dejando claros los conceptos a practicar.
-
-### Dificultades registradas para trabajar en los próximos bloques
-
-1. **En C:**
-   - Control de flujo y lectura secuencial de caracteres.
-   - Banderas de estado (`flags`) para aplicar reglas condicionales.
-   - Recorridos de arreglos unidimensionales mediante índices `[i]` y límites de parada.
-2. **En JavaScript:**
-   - Manipulación de arreglos construyendo resultados con `.push()` y `.includes()`.
-   - Asegurar `return` frente a `console.log`.
-   - Control de casos límite (arreglos vacíos `[]`, negativos, duplicados).
-
-### Fortalezas consolidadas
-
-- Recorridos con bucles y acumuladores.
-- Seguimiento y conservación de máximos y rachas.
-- Capacidad de razonamiento competitivo demostrada en el torneo.
+- **Acciones realizadas:**
+  1. Reestructuración completa del entrenamiento: transición a un único lenguaje de trabajo (**C++ Puro**).
+  2. Limpieza del espacio de trabajo: eliminación de bloques antiguos de JavaScript.
+  3. Verificación de entorno: compilador `g++ (Rev8, MSYS2) 15.2.0` verificado y operativo.
+  4. Actualización de reglas y plan general en [GEMINI.md](file:///C:/xampp/htdocs/daily-blocks/GEMINI.md) y [PLAN_ENTRENAMIENTO.md](file:///C:/xampp/htdocs/daily-blocks/PLAN_ENTRENAMIENTO.md).
+  5. Creación de la ficha teórica para Obsidian: [TEORIA_Y_HERRAMIENTAS.md](file:///C:/xampp/htdocs/daily-blocks/bloque-01/TEORIA_Y_HERRAMIENTAS.md) (Arreglos en memoria y formato con `setw`).
+  6. Creación de los 5 ejercicios prácticos en C++ del Bloque 1:
+     - `ejercicio-01.cpp`: Filtrado y promedio exacto de lecturas positivas (evitar división por cero).
+     - `ejercicio-02.cpp`: Extremos (mín/máx) y cálculo de separación entre índices.
+     - `ejercicio-03.cpp`: Racha consecutiva máxima (máquina de estados/récord histórico).
+     - `ejercicio-04.cpp`: Inversión in-place con dos índices sin arreglo auxiliar.
+     - `ejercicio-05.cpp`: Debugging de 3 bugs comunes (out-of-bounds, inicialización y pérdida de precisión).
 
 ---
 
-## Estado de Bloques
+## 4. Punto de Arranque para Mañana
 
-| Bloque | Enfoque | Estado | Detalle |
-|---|---|---|---|
-| **Bloque 1** | Básico–intermedio JS | Completado | Cerrado con revisión guiada. |
-| **Bloque 2** | Intermedio arreglos JS | Integrado | Conceptos de arreglos se integran al nuevo flujo mixto. |
-| **Bloque 3** | Mixto C + JS (Arreglos, Índices y Banderas) | **Pendiente por iniciar** | 5 ejercicios: Ej1 (C), Ej2 (JS), Ej3 (C), Ej4 (JS), Ej5 (Debug). |
-
----
-
-## Punto de Arranque para la Siguiente Sesión
-
-- **Acción inmediata:** Crear carpeta `bloque-03/` y preparar el **Ejercicio 1 en C**.
-- **Tema del Ejercicio 1 (C):** Arreglos unidimensionales e índices: búsqueda, conteo y límites sin punteros.
-
-
+- **Acción inmediata:** Abrir y resolver [ejercicio-01.cpp](file:///C:/xampp/htdocs/daily-blocks/bloque-01/ejercicio-01.cpp).
+- **Lectura de apoyo sugerida:** Repasar [TEORIA_Y_HERRAMIENTAS.md](file:///C:/xampp/htdocs/daily-blocks/bloque-01/TEORIA_Y_HERRAMIENTAS.md) para copiar a Obsidian.
